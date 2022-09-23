@@ -1,2 +1,2 @@
-# PORTAL_DE_NOTICIAS
- Um dos meus primeiros projetos em HTML!
+# Portal de Notícias!!
+ Um dos meus primeiros projetos em HTML onde eu aprendi bastante.

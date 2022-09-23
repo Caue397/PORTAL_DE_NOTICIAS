@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Portal</title>
+  <link rel="stylesheet" href="html_portal/assets/css/style.css">
+  <script type="text/javascript" src="html_portal/assets/js/script.js"></script>
+</head>
+<body>
+  <div class="topo">
+    <div class="topoint">
+      <div class="topoleft">
+        <ul>
+          <li><a href="./" class="ativo">Home</li>
+          <li><a href="quem-somos">Quem Somos</li>
+          <li><a href="anuncie-aqui">Anuncie Aqui</li>
+          <li><a href="contato">Contato</li>
+        </ul>
+      </div>
+      <div class="toporight">
+        <input type="image" src="html_portal/assets/images/search.png" width="26" height="26" />
+        <input type="text" name="busca" placeholder="Buscar..." class="busca" />
+        <a href=""><img src="html_portal/assets/images/youtube.png" border="0" width="26" height="26"/></a>
+        <a href=""><img src="html_portal/assets/images/twitter.png" border="0" width="26" height="26"/></a>
+        <a href=""><img src="html_portal/assets/images/facebook.png" border="0" width="26" height="26"/></a>
+        <a href=""><img src="html_portal/assets/images/google plus.png" border="0" width="26" height="26"/></a>
+        <a href=""><img src="html_portal/assets/images/rss.png" border="0" width="26" height="26"/></a>
+      </div>
+    </div>
+  </div>
+  <div class="topo2">
+    <div class="topo2int">
+      <div class="logo">
+        <img src="html_portal/assets/images/logo2.png" border="0" width="230" />
+      </div>
+      <div class="banner">
+        <img src="html_portal/assets/images/banner.jpg" border="0" width="650" height="80">
+      </div> 
+    </div>
+  </div>
+  <div class="menu">
+    <div class="menuint">
+      <img src="html_portal/assets/images/menuicon.png" border="0" width="40" height="40" class="menumobile" onclick="toggleMenu()" />
+      <ul id="menu">
+        <li><a href="./">Home</a></li>
+        <li><a href="economia">Economia</a></li>
+        <li>
+          <a href="entreterimento">Entretenimento</a>
+          <img src="html_portal/assets/images/arrowdown.png" width="8" border="0" />
+          <div class="submenu">
+            <div class="submenuitem"><a href="./">VideoGames</a></div>
+            <div class="submenuitem"><a href="./">Cinema</a></div>
+            <div class="submenuitem"><a href="./">Música</a></div>
+            <div class="submenuitem"><a href="./">Filmes</a></div>
+            <div class="submenuitem"><a href="./">Séries</a></div>
+          </div> 
+        </li>
+        <li>
+          <a href="esportes">Esportes</a>
+          <img src="html_portal/assets/images/arrowdown.png" width="8" border="0"/>
+          <div class="submenu">
+            <div class="submenuitem"><a href="./">Futebol</a></div>
+            <div class="submenuitem"><a href="./">Basquete</a></div>
+            <div class="submenuitem"><a href="./">Volleyball</a></div>
+          </div>
+        </li>
+        <li><a href="geral">Geral</a></li>
+        <li>
+          <a href="noticias">Notícias</a>
+          <img src="html_portal/assets/images/arrowdown.png" width="8" border="0"/>
+          <div class="submenu">
+            <div class="submenuitem"><a href="./">Política</a></div>
+            <div class="submenuitem"><a href="./">Agropecuária</a></div>
+            <div class="submenuitem"><a href="./">Comércio</a></div>
+            <div class="submenuitem"><a href="./">Indústria</a></div>
+          </div>
+        </li>
+        <li><a href="policia">Polícia</a></li>
+        <li><a href="videos">Vídeos</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="ultimasnoticias">
+    <div class="ultimasnoticiasint">
+      <div class="ultimasnoticiasarea">
+       <div class="ultimasnoticiastitulo">ÚLTIMAS NOTÍCIAS</div>
+       <div class="ultimasnoticiasnoticia">Alexandre de Moraes determina quebra de sigilo de investigados e bloqueio de perfis na internet</div>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="containerint">
+      <div class="leftside">
+        <div class="slideshow" id="slideshow">
+          <div class="slidebolinhas">
+            <div class="bolinha" onclick="mudarSlide(0)"></div>
+            <div class="bolinha" onclick="mudarSlide(1)"></div>
+            <div class="bolinha" onclick="mudarSlide(2)"></div>
+            <div class="bolinha" onclick="mudarSlide(3)"></div>
+          </div>
+          <div class="slideshowarea">
+            <a href="https://www.google.com.br">
+              <div class="slide" style="background-image:url('html_portal/assets/images/noticiaslide1.jpg')">
+                <div class="slideinfo">
+                  <div class="slideinfo_titulo">Casos de coronavírus e número de mortes no Brasil em 27 de maio</div>
+                  <div class="slideinfo_subtitulo">As secretarias estaduais de Saúde confirmam no país 399.632 casos do novo coronavírus (Sars-CoV-2), com 25.035 mortes.</div>
+                </div>
+              </div>
+            </a>
+            <div class="slide" style="background-image:url('html_portal/assets/images/noticiaslide2.jpg')">
+              <div class="slideinfo">
+                <div class="slideinfo_titulo">Pesquisa da UFPel aponta que contaminação por coronavírus está estável no RS</div>
+                <div class="slideinfo_subtitulo">Quarta fase do estudo inédito mostra que 20,2 mil já tiveram contato com o vírus no Estado</div>
+                
+              </div>
+            </div>
+            <div class="slide" style="background-image:url('html_portal/assets/images/noticiaslide3.jpg')">
+              <div class="slideinfo">
+                <div class="slideinfo_titulo">Números de coronavírus na Itália voltam a subir</div>
+                <div class="slideinfo_subtitulo">País apresentou alta de novos casos e mortes pela covid-19</div>
+                
+              </div>
+            </div>
+            <div class="slide" style="background-image:url('html_portal/assets/images/noticiaslide4.jpg')">
+              <div class="slideinfo">
+                <div class="slideinfo_titulo">Coronavírus: Parques e academias podem reabrir na próxima semana</div>
+                <div class="slideinfo_subtitulo">Para que a medida seja efetivada, o GDF vai avaliar a curva dos casos de coronavírus na capital após a reabertura de alguns comércios esta semana
+</div>
+                
+              </div>
+            </div>
+            <div class="slide" style="background-image:url('https://www.google.com.br/google.jpg')">
+              <div class="slideinfo">
+                <div class="slideinfo_titulo">Titulo de teste</div>
+                <div class="slideinfo_subtitulo">Subtitulo de teste</div>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      <div class="widget">
+        <div class="widget_titulo">NOTÍCIAS</div>
+          <div class="widget_conteudo">
+            <div class="noticiaarea1">
+              <div class="noticiaitem noticiabig">
+                <div class="noticiaimg">
+                  <img src="html_portal/assets/images/noticia1.jpg" border="0" width="80" height="80">
+                </div>
+                <div class="noticiatitulo">Lista de investigados: empresários, políticos, militantes bolsonaristas</div>
+                <div class="noticiainfo">Alvos da operação reclamam de censura e reivindicam liberdade de expressão</div>
+              </div>
+            </div>
+            <div class="noticiaarea2">
+              <a href="https://www.google.com.br">
+                <div class="noticiaitem">
+                  <div class="noticiaimg">
+                    <img src="html_portal/assets/images/noticia2.jpg" border="0" width="80" height="80">
+                  </div>
+                  <div class="noticiatitulo">EUA batem 100 mil mortes pela Covid enquanto Trump pede reabertura</div>
+                  <div class="noticiainfo">País é o primeiro a registrar esse número e já tem quase 1,7 milhão de infectados.</div>
+                </div>
+            </a>
+              <div class="noticiaitem">
+                <div class="noticiaimg">
+                  <img src="html_portal/assets/images/noticia3.jpg" border="0" width="80" height="80">
+                </div>
+                <div class="noticiatitulo">Fux diz que STF está 'vigilante' contra agressões à instituição</div>
+                <div class="noticiainfo">Há 5 horas</div>
+              </div>
+              <div class="noticiaitem">
+                <div class="noticiaimg">
+                  <img src="html_portal/assets/images/noticia4.jpg" border="0" width="80" height="80">
+                </div>
+                <div class="noticiatitulo">Ministro do STF diz que provas indicam existência de associação criminosa</div>
+                <div class="noticiainfo">Moraes cita na decisão o 'gabinete do ódio', que segundo parlamentares é ligado à Presidência.</div>
+              </div>
+              <div class="noticiaitem">
+                <div class="noticiaimg">
+                  <img src="html_portal/assets/images/noticia5.jpg" border="0" width="80" height="80">
+                </div>
+                <div class="noticiatitulo">Quem são os empresários investigados no inquérito das fake news</div>
+                <div class="noticiainfo">Lista inclui Luciano Hang, dono da Havan, e Edgard Corona, da Smart Fit.</div>
+              </div>
+            </div>
+            <div style="clear:both"></div>
+          </div>
+       </div>
+       <div class="widget">
+        <div class="widget_titulo">ESPORTES</div>
+          <div class="widget_conteudo">
+            <div class="noticiaarea1">
+              <div class="noticiaitem noticiabig">
+                <div class="noticiaimg">
+                  <img src="html_portal/assets/images/noticia6.jpg" border="0" width="80" height="80">
+                </div>
+                <div class="noticiatitulo">Alvos da operação reclamam de censura e reivindicam liberdade de expressão</div>
+                <div class="noticiainfo">Neymar não perdoa nem o próprio filho na trollagem...</div>
+              </div>
+            </div>
+            <div class="noticiaarea2">
+              <a href="https://www.google.com.br">
+                <div class="noticiaitem">
+                  <div class="noticiaimg">
+                    <img src="html_portal/assets/images/noticia8.jpg" border="0" width="80" height="80">
+                  </div>
+                  <div class="noticiatitulo">Corinthians decide demitir funcionários e dispensar atletas por conta da crise</div>
+                  <div class="noticiainfo">Com menos competições, departamento de base deve ser um dos mais atingidos pelos cortes
+</div>
+                </div>
+            </a>
+              <div class="noticiaitem">
+                <div class="noticiaimg">
+                  <img src="html_portal/assets/images/noticia7.jpeg" border="0" width="80" height="80">
+                </div>
+                <div class="noticiatitulo">Plano para retomada tem estádios divididos por zonas e gandulas em jornada dupla</div>
+                <div class="noticiainfo">Federação traça modelo para volta do campeonato, mas ainda sem prazo definido</div>
+              </div>
+              <div class="noticiaitem">
+                <div class="noticiaimg">
+                  <img src="html_portal/assets/images/noticia9.jpg" border="0" width="80" height="80">
+                </div>
+                <div class="noticiatitulo">Massagista do Santa Cruz entra na linha de frente contra a Covid-19: "Nunca vi tanta gente morrer"</div>
+                <div class="noticiainfo">Campello revela que alguns jogadores do Vasco testaram positivo para Covid-19</div>
+              </div>
+              <div class="noticiaitem">
+                <div class="noticiaimg">
+                  <img src="html_portal/assets/images/noticia10.jpg" border="0" width="80" height="80">
+                </div>
+                <div class="noticiatitulo">KaBuM anuncia contratações de Revolta e Yang</div>
+                <div class="noticiainfo">Dupla da histórica line-up do Exodia reforça atual campeã do CBLoL</div>
+              </div>
+            </div>
+            <div style="clear:both"></div>
+          </div>
+       </div>
+      </div>
+      <div class="rightside">
+        <div class="widget">
+          <div class="widget_titulo">SOCIAL</div>
+          <div class="widget_conteudo">
+            <a href=""><img src="html_portal/assets/images/youtube.png" border="0" width="26" height="26"/></a>
+            <a href=""><img src="html_portal/assets/images/twitter.png" border="0" width="26" height="26"/></a>
+            <a href=""><img src="html_portal/assets/images/facebook.png" border="0" width="26" height="26"/></a>
+            <a href=""><img src="html_portal/assets/images/google plus.png" border="0" width="26" height="26"/></a>
+            <a href=""><img src="html_portal/assets/images/rss.png" border="0" width="26" height="26"/></a>
+          </div>
+        </div>
+        <div class="widget">
+          <div class="widget_titulo">ÚLTIMAS NOTÍCIAS</div>
+          <div class="widget_conteudo">
+            <div class="noticia_item">
+              <a href="./">ANDRÉIA SADI: Aras pede suspensão de inquérito que mira bolsonaristas</a>
+            </div>
+            <div class="noticia_item">
+              <a href="./">Em decisão unânime, STJ mantém investigação do caso Marielle no RJ</a>
+            </div>
+            <div class="noticia_item">
+              <a href="./">SP inicia nova fase da quarentena na segunda, com reabertura gradual</a>
+            </div>
+            <div class="noticia_item">
+              <a href="./">Isolamento em SP ajudou a salvar 65 mil vidas, diz governo estadual</a>
+            </div>
+            <div class="noticia_item">
+              <a href="./">Mau tempo adia para sábado lançamento de foguete da SpaceX</a>
+            </div>
+          </div>
+        </div>
+        <div class="widget">
+          <div class="widget_titulo">PUBLICIDADE</div>
+          <div class="widget_conteudo">
+            <img src="html_portal/assets/images/hulk agiota.jpg" border="0" width="245" />
+          </div>
+        </div>
+        <div class="widget">
+          <div class="widget_titulo">ENCONTRE-NOS NO FACEBOOK</div>
+          <div class="widget_conteudo">
+            <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FB7Web%2F&tabs&width=245&height=121&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="245" height="121" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
